@@ -19,6 +19,28 @@ section
 {
     padding: 80px 0;
 }
+
+.heading
+{
+    text-align: center; 
+    font-weight : bolder;
+    margin-bottom: 20px;
+}
+
+.sub-heading
+{
+    text-align: center; 
+    color: #9da29c;
+    /* font-weight : bolder; */
+}
+
+.headings
+{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
 /* Navbar */
 
 .navbar-brand h4
@@ -175,14 +197,20 @@ section
     width: 100%;
 }
 
+.help hr{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 .right-content 
 {
     padding:15px;
-    padding-left: 60px !important;
+    /* padding-left: 60px !important; */
 }
 
 .right-content h6{
     font-size: 12px;
+    color: #9da29c;
 }
 
 .right-content h3{
@@ -201,15 +229,44 @@ section
 {
     display: inline;
     border-radius: 17px;
-    padding: 5px 20px;
+    padding: 7px 20px !important;
     background-color: #ff573d;
     color: #fff;
+    text-align: center;
 }
 .help-donate_btn a{
     text-decoration: none;
     color: white;
     font-size: 11px;
+    font-weight: bold; 
+    padding: 0 !important;
+    margin: 0;
+}
+
+.help-card i{
+    font-size: 30px;
+    color: #ff573d;
+    padding-top: 15px;
+}
+
+.help-card .left
+{
+    text-align: center;
+}
+
+.help-card .right h6
+{
     font-weight: bold;
+}
+
+.help-card .right p
+{
+    color: #9da29c;
+}
+
+.help-card .right
+{
+    padding: 12px;
 }
 
 /* NGO */
@@ -222,6 +279,339 @@ section
 {
     color: white;
     text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.ngo h6{
+    color: #ff573d;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Our causes */
+
+.causes-card .upper i{
+    font-size: 50px;
+    color:#ff573d;
+    margin-bottom: 20px;
+}
+
+.causes-card .lower p{
+    font-size : small;
+    color: #9da29c;
+}
+
+.causes-card .upper
+{
+    text-align: center;
+}
+
+.causes-card .lower
+{
+    text-align: center;
+}
+
+/* Charity */
+
+.charity
+{
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding: 0 !important;
+}
+
+.charity .left
+{
+    /* width: 50%; */
+    min-height: 500px;
+    background-size: cover;
+    /* background-image: url('assets/images/charity-img.avif'); */
+    background-position: center;
+}
+.charity .right
+{
+    background-color: #ff573d;
+    color: white;
+    padding: 40px;
+}
+
+.charity .right h3{
+    margin: 0;
+}
+
+.charity .right p{
+    font-size: 27px;
+    font-weight: 200;
+}
+
+.charity .right hr
+{
+    margin: 40px 0;
+}
+
+.charity .right .menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.charity .right .menu h6
+{
+    font-size: 14px;
+}
+
+.menu-item p
+{
+    font-size: 13px !important;
+    margin: 20px 0 ;
+}
+
+.video
+{   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.you-help-card
+{
+    text-align: center;
+}
+
+.you-help-card i{
+    font-size: 50px;
+    color:#ff573d;
+    margin-bottom: 20px;
+}
+
+.you-help-card h6{
+    font-weight: bold;
+}
+
+.you-help-card p{
+    color: #9da29c;
+    font-size: 13px;
+}
+
+/* Cindy */
+
+.cindy
+{
+    background-position: center;
+    position: relative;
+}
+.cindy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust darkness (0 = transparent, 1 = full black) */
+    z-index: 1;
+}
+.cindy-content{
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cindy-content h6{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.cindy-content h3{
+    color: #ff573d;
+    margin-bottom: 15px;
+}
+
+.cindy-content p{
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+
+/* Calculator */
+
+.cal-items
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cal-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-item h3
+{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.cal-item p
+{
+    color: #9da29c;
+}
+
+.cal-item .divider
+{
+    height: 5px;
+    width: 40px;
+    background-color: #ff573d;
+}
+
+/* Success Story */
+
+.story
+{
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.story .upper
+{
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.story .lower .title
+{
+    margin-bottom: 20px;
+}
+
+.story .lower .title p
+{   
+    display: inline-block;
+    padding: 3px 30px;
+    background-color: #ff573d;
+    color: white;
+}
+
+.story .lower h6{
+    margin-bottom: 20px ;
+}
+
+.story .lower p
+{
+    color: #9da29c;
+}
+
+.story .lower .title p{
+    margin: 0 !important;
+}
+
+/* Client Logos */
+
+.client-logo
+{
+    background-color:#ff573d;
+}
+
+.logos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    text-align: center;
+}
+
+.logos img
+{
+    height: 120px;
+    color: white;
+}
+
+/* Help Form */
+
+.form-content
+{
+    background-color: #ff573d;
+}
+
+.help-form .left
+{
+    min-height: 400px;
+    background-position: center;
+}
+
+.help-form .right
+{
+    padding: 60px;
+    color: white;
+}
+
+.help-form .right form input
+{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.help-form .right h6
+{
+    font-weight: 300;
+}
+
+.help-form .right h3{
+    font-size: 40px;
+}
+
+.sign-in
+{   
+    display: inline;
+    border: 2px solid white;
+    padding: 8px 25px;
+    border-radius: 3px;
+}
+
+.sign-in a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+/* Any Questions */
+
+.any-questions
+{
+    background-color: #f6f6f6;
+}
+
+.contacts
+{
+    text-align: center;
+}
+
+.contact{
+    background-color: #fff;
+
+}
+
+.contact i{
+    font-size: 30px;
+    color: #ff573d;
 }
 
 /* Media Queries */
@@ -230,6 +620,16 @@ section
 {
     .navbar-items{
         display: none;
+    }
+    .headings
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+    .help-card{
+        text-align: center;
     }
 }
 
