@@ -50,3 +50,84 @@ function increaseCounter() {
 }
 
 increaseCounter();
+
+
+const menu = document.querySelectorAll(".menu h6");
+const menu_item = document.querySelectorAll(".menu-item");
+const menu_items= document.querySelectorAll(".menu_items");
+
+console.log(menu);
+
+// const items = document.querySelectorAll(".item");
+// const dots = document.querySelectorAll(".dot")
+
+let item_index = 0;
+menu_item[item_index].classList.add("active");
+menu[item_index].classList.add("active");
+console.log("added");
+
+menu[0].addEventListener("click",()=>
+{
+    menu[item_index].classList.remove("active");
+    menu_item[item_index].classList.remove("active");
+    item_index=0;
+    menu[0].classList.add("active")
+    menu_item[0].classList.add("active");
+    menu_item.forEach((item,index)=>
+    {
+        item.style.transform = `translateX(-${item_index*100}%)`;
+    })
+    
+    console.log(item_index);
+})
+menu[1].addEventListener("click",()=>
+{
+    menu[item_index].classList.remove("active");
+    menu_item[item_index].classList.remove("active");
+    item_index=1;
+    menu[1].classList.add("active")
+    menu_item[1].classList.add("active");
+    menu_item.forEach((item,index)=>
+    {
+        item.style.transform = `translateX(-${item_index*100}%)`;
+    })
+    
+    console.log(item_index);
+})
+menu[2].addEventListener("click",()=>
+{
+    menu[item_index].classList.remove("active");
+    menu_item[item_index].classList.remove("active");
+    item_index=2;
+    menu[2].classList.add("active")
+    menu_item[2].classList.add("active");
+    menu_item.forEach((item,index)=>
+    {
+        item.style.transform = `translateX(-${item_index*100}%)`;
+    })
+    
+    console.log(item_index);
+})
+menu[3].addEventListener("click",()=>
+{
+    menu[item_index].classList.remove("active");
+    menu_item[item_index].classList.remove("active");
+    item_index=3;
+    menu[3].classList.add("active")
+    menu_item[3].classList.add("active");
+    menu_item.forEach((item,index)=>   
+    {
+        item.style.transform = `translateX(-${item_index*100}%)`;
+    })
+    
+    console.log(item_index);
+})
+
+
+const hamburgur = document.querySelector(".hamburgur");
+const dropdown = document.querySelector(".dropdown")
+
+hamburgur.addEventListener("click",()=>
+{
+    dropdown.classList.toggle("true");
+})

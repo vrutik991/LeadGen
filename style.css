@@ -1,18 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-    font-family: "Roboto", sans-serif;
+    box-sizing:border-box;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Montserrat", sans-serif;
 }
 
 body{
     width: 100%;
+    height: 100%;
 }
 
 header
 {
     background-color: #212529;
-    /* display: none; */
 }
 
 section
@@ -25,20 +26,26 @@ section
     text-align: center; 
     font-weight : bolder;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub-heading
 {
     text-align: center; 
     color: #9da29c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* font-weight : bolder; */
 }
 
 .headings
 {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 60px;
+    /* width: 70%;
+    margin: 0 auto; */
+    padding-bottom: 60px;
 }
 
 /* Navbar */
@@ -58,16 +65,16 @@ section
 
 .navbar 
 {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
 }
 
 .navbar-items ul
 {
     list-style: none;
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 0;
     gap: 20px;
 
@@ -75,6 +82,7 @@ section
 .nav-item{
     /* padding:5px 20px; */
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     text-transform: uppercase;
     font-size: 13px;
@@ -96,7 +104,6 @@ section
 {
     color: white;
     text-decoration: none !important;
-    /* padding: 5px 20px; */
 }
 
 .nav-btn
@@ -107,7 +114,33 @@ section
 
 .nav-btn-left
 {
-    margin-right: 15px;
+}
+
+.hamburgur
+{
+    font-size: 40px;
+    color: white;
+}
+
+.dropdown
+{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.dropdown .nav-item
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.true
+{
+    display: flex;
 }
 
 
@@ -208,6 +241,7 @@ section
 .help-image
 {
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
 }
@@ -215,12 +249,6 @@ section
 .help hr{
     margin-top: 80px;
     margin-bottom: 80px;
-}
-
-.right-content 
-{
-    padding:15px;
-    padding-left: 60px !important;
 }
 
 .right-content h6{
@@ -332,11 +360,10 @@ section
 
 .charity
 {
-    /* width: 100%; */
-    /* display: flex; */
-    /* flex-direction: row; */
     padding: 0 !important;
+    width: 100%;
 }
+
 
 .charity .left
 {
@@ -349,6 +376,7 @@ section
 }
 .charity .right
 {
+    /* width: 50%; */
     background-color: #ff573d;
     color: white;
     padding: 40px;
@@ -371,13 +399,36 @@ section
 .charity .right .menu
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .charity .right .menu h6
 {
     font-size: 14px;
+    padding: 5px;
+}
+
+.menu_items
+{
+    display: flex;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.menu h6{
+    cursor: pointer;
+}
+
+.menu .active
+{
+    color: black;
+}
+
+.menu-item
+{
+    min-width: 100%;
+    transition: 1s;
 }
 
 .menu-item p
@@ -397,6 +448,7 @@ section
 .you-help-card
 {
     text-align: center;
+    /* background-color: red; */
 }
 
 .you-help-card i{
@@ -418,6 +470,7 @@ section
 
 .cindy
 {
+    width: 100%;
     background-position: center;
     position: relative;
 }
@@ -438,8 +491,12 @@ section
     z-index: 2;
     left: 0;
     top: 0;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 
 .cindy-content h6{
@@ -478,11 +535,13 @@ section
 {
     font-size: 40px;
     font-weight: 500;
+    margin-bottom: 5px !important;
 }
 
 .cal-item p
 {
     color: #9da29c;
+    margin-bottom: 5px !important;
 }
 
 .cal-item .divider
@@ -490,14 +549,22 @@ section
     height: 5px;
     width: 40px;
     background-color: #ff573d;
+    margin-bottom: 30px;
 }
 
 /* Success Story */
+
+.stories
+{
+    display: flex;
+    justify-content: space-between;
+}
 
 .story
 {
     background-color: #f6f6f6;
     text-align: center;
+    margin: 10px;
 }
 
 .story .upper
@@ -506,6 +573,16 @@ section
     width: 100%;
     background-position: center;
     margin-bottom: 40px;
+}
+
+.story .upper img
+{   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .story .lower .title
@@ -551,12 +628,17 @@ section
 .logo
 {
     text-align: center;
+
+
 }
 
 .logos img
 {
-    height: 120px;
+    height: auto;
+    width: 100%;
     color: white;
+    background-size:10%;
+    background-position: center;
 }
 
 /* Help Form */
@@ -578,11 +660,19 @@ section
     color: white;
 }
 
+.help-form .right form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .help-form .right form input
 {
     padding: 10px 10px;
     border: none;
     border-radius: 3px;
+    margin-bottom: 20px;
 }
 
 .help-form .right h6
@@ -591,7 +681,8 @@ section
 }
 
 .help-form .right h3{
-    font-size: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .sign-in
@@ -622,7 +713,8 @@ section
     /* text-align: center; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -632,9 +724,9 @@ section
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding:30px; */
-    width: 24%;
-    height: 220px;
+    /* width: 24%; */
+    /* height: 220px; */
+    padding: 10px;
     transition: .5s;
 }
 
@@ -663,10 +755,10 @@ section
 
 .footer-icons
 {
-    width: 40%;
-    margin: 50px auto;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    /* width: 40%; */
+    /* margin: 50px auto; */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     /* align-items: center; */
 }
@@ -698,7 +790,6 @@ footer p
     text-align: center;
     color: #9da29c;
     font-size: 10px;
-    margin:40px 0;
 }
 
 /* Media Queries */
@@ -722,13 +813,22 @@ footer p
     .help-card{
         text-align: center;
     }
+    .hamburgur 
+    {
+        font-size: 30px;
+    }
 }
 
-@media (max-width:992px) 
+@media (max-width:991px) 
 {
     .story
     {
         margin-bottom: 40px;
+    }
+    .right-content
+    {
+        text-align: center;
+        padding-left: 10px !important;
     }
 }
 
@@ -736,20 +836,54 @@ footer p
 {
     .contact
     {
-        width: 70%;
-        margin:20px auto;
+        width: 100%;
+        margin-bottom: 20px;
     }
+     .contacts
+     {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
     .help-image
     {
         padding-bottom: 40px !important;
     }
-    .right-content
+    .stories
+    {
+        flex-direction: column;
+    }
+    .story .upper{
+        height: 100%
+    };
+    .logo{
+        
+    }
+}
+
+@media (min-width:769px)
+{
+    .dropdown
+    {
+        display: none;
+    }
+    .hamburgur
+    {
+        display: none;
+    }
+}
+
+@media(max-width:342px)
+{
+    .menu
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding-left: 10px !important;
+    }
+    .video iframe
+    {
+        width: 100%;
     }
 }
 
